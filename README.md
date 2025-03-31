@@ -35,8 +35,8 @@ This project involves building an interactive rating component where users can:
 
 ### Live Demo
 
-- [Solution on Frontend Mentor](#) *(Replace with actual link)*
-- [Live Site](#) *(Replace with actual link)*
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-component-zllIMinc8S) 
+- [Live Site](https://interactive-rating-plum.vercel.app) 
 
 ## Development Process
 
@@ -70,11 +70,6 @@ Through this challenge, I improved my ability to:
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [Styled Components](https://styled-components.com/)
 
-## Author
-
-- Portfolio: [Your Portfolio](#) *(Replace with actual link)*
-- Frontend Mentor: [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter: [@yourusername](https://www.twitter.com/yourusername)
 
 ## Acknowledgments
 
