@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
+import RatingsButtons from './RatingsButtons'
 
 const RatingsContainer = () => {
   return (
@@ -43,6 +44,8 @@ const RatingsContainer = () => {
         }}>
             Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
         </Typography>
+
+        <RatingsButtons/>
     </Box>
   )
 }
