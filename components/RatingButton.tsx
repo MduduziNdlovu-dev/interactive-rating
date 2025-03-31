@@ -1,17 +1,21 @@
+'use client'
+
 import { Button } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 
 interface RatingButtonProps {
-    label: number ;
+    rating: number ;
+    setSelected: (arg1 : number) => void;
+    selectedRating: number;
 }
 
-const RatingButton = ({label} : RatingButtonProps) => {
+const RatingButton = ({rating, setSelected, selectedRating} : RatingButtonProps) => {
     
   return (
     
         <Button sx={{
-        backgroundColor: "#262E38",
-        color: "#969fad",
+        backgroundColor: rating === selectedRating ? "#ffffff" : "#262E38",
+        color: rating === selectedRating ? "#262E38" : "#969fad",
         borderRadius: "50%",
         width: "3rem",
         height: "4rem",
@@ -21,7 +25,11 @@ const RatingButton = ({label} : RatingButtonProps) => {
             color: "#262E38",
             fontSize: "1.125rem",
         }
-            }}>{label}</Button>
+            }}
+        onClick={() => setSelected(rating)}    
+        >
+            {rating}
+        </Button>
     
     
   )
