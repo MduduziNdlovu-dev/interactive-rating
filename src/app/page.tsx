@@ -1,10 +1,17 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+
 import { Box } from "@mui/material";
+import RatingsContainer from "../../components/RatingsContainer";
 
 export default function Home() {
   return (
-    <Box>
+    <Box sx={{
+      display: 'flex',
+      justifyContent:'center',
+      alignItems:'center',
+      height: '100vh',
+      padding:'2rem',
+    }}>
+      <RatingsContainer />
       
     </Box>
   );
