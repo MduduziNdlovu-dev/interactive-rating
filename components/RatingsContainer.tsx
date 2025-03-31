@@ -7,6 +7,7 @@ import ThanksMessage from './ThanksMessage'
 
 const RatingsContainer = () => {
     const [submitted, setSubmitted] = useState(false);
+    const [selectedRating, setSelectedRating] = useState<number | null>(null);
 
     return (
         <Box sx={{
@@ -17,7 +18,7 @@ const RatingsContainer = () => {
             borderRadius: "1.875rem",
         }}>
             {submitted ? ( 
-                <ThanksMessage /> 
+                <ThanksMessage rating={selectedRating} />  // ✅ Pass selected rating
             ) : ( 
                 <> 
                     <Box sx={{
@@ -31,7 +32,7 @@ const RatingsContainer = () => {
                         marginBottom: "1.875rem"
                     }}>
                         <Image 
-                            src="/images/icon-star.svg" // FIXED IMAGE PATH
+                            src="/images/icon-star.svg"
                             alt="star logo"
                             height={16}
                             width={16}
@@ -53,10 +54,10 @@ const RatingsContainer = () => {
                         Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
                     </Typography>
 
-                    <RatingsButtons/>
+                    <RatingsButtons setSelectedRating={setSelectedRating} /> {/* ✅ Pass setter */}
 
                     <Button sx={{
-                        backgroundColor: "#FC7614",
+                        backgroundColor: selectedRating !== null ? "#FC7614" : "#555", // Disable if not selected
                         color: "#131518",
                         fontWeight: 600,
                         borderRadius: "1.4063rem",
@@ -66,9 +67,10 @@ const RatingsContainer = () => {
                         marginTop: "2rem",
                         padding: "0.75rem",
                         "&:hover": {
-                            backgroundColor: "#FFFFFF"
+                            backgroundColor: selectedRating !== null ? "#FFFFFF" : "#555"
                         },
                     }}
+                    disabled={selectedRating === null} 
                     onClick={() => setSubmitted(true)}
                     >
                         Submit
