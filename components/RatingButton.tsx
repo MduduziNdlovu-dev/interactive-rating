@@ -8,7 +8,22 @@ interface RatingButtonProps {
 const RatingButton = ({label} : RatingButtonProps) => {
     
   return (
-    <Button>{label}</Button>
+    
+        <Button sx={{
+        backgroundColor: "#262E38",
+        color: "#969fad",
+        borderRadius: "50%",
+        width: "3rem",
+        height: "4rem",
+        fontWeight: 600,
+        "&:hover": {
+            backgroundColor: "#FC7614",
+            color: "#262E38",
+            fontSize: "1.125rem",
+        }
+            }}>{label}</Button>
+    
+    
   )
 }
 

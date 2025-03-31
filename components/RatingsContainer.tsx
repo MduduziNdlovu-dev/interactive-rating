@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 import RatingsButtons from './RatingsButtons'
@@ -20,6 +20,7 @@ const RatingsContainer = () => {
             alignItems: "center",
             height: "3rem",
             width: "3rem",
+            marginBottom: "1.875rem"
         }}>
             <Image 
                 src="images\icon-star.svg"
@@ -41,11 +42,29 @@ const RatingsContainer = () => {
         
         <Typography variant='body1' sx={{
             color: "#969FAD",
+            margin: "1.5rem 0"
         }}>
             Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
         </Typography>
 
         <RatingsButtons/>
+
+        <Button sx={{
+            backgroundColor: "#FC7614",
+            color: "#131518",
+            fontWeight: 600,
+            borderRadius: "1.4063rem",
+            fontSize: "1.125rem",
+            width: "100%",
+            height: "3rem",
+            marginTop: "2rem",
+            padding: "0.75rem",
+            "&:hover": {
+                backgroundColor: "#FFFFFF"
+            },
+        }}>
+            Submit
+        </Button>
     </Box>
   )
 }
