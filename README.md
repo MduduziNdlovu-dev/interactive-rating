@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Mentor - Interactive Rating Component Solution
 
-## Getting Started
+This is my solution to the [Interactive Rating Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). This challenge helped me refine my frontend development skills by creating an interactive and responsive UI component.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+  - [The Challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Live Demo](#live-demo)
+- [Development Process](#development-process)
+  - [Built With](#built-with)
+  - [Key Learnings](#key-learnings)
+  - [Future Enhancements](#future-enhancements)
+  - [Resources](#resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### The Challenge
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project involves building an interactive rating component where users can:
 
-## Learn More
+- View a responsive design optimized for different screen sizes
+- See hover states for all interactive elements
+- Select a rating and submit it
+- Receive feedback with a "Thank You" message after submission
 
-To learn more about Next.js, take a look at the following resources:
+### Screenshot
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Interactive Rating Component Screenshot](![demo shot](image.png))
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> Ensure to replace the placeholder with an actual screenshot of your solution.
 
-## Deploy on Vercel
+### Live Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Solution on Frontend Mentor](#) *(Replace with actual link)*
+- [Live Site](#) *(Replace with actual link)*
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development Process
+
+### Built With
+
+- **Semantic HTML5** for structured content
+- **CSS Custom Properties** for maintainable styling
+- **Flexbox & CSS Grid** for responsive layouts
+- **JavaScript** for interactivity
+- **React** for UI components
+- **Styled Components** for modular styling
+
+### Key Learnings
+
+Through this challenge, I improved my ability to:
+
+- Handle component state efficiently in React
+- Implement smooth UI transitions and animations
+- Optimize accessibility by using proper HTML semantics
+
+
+### Future Enhancements
+
+- Adding animations for better user experience
+- Implementing local storage to retain user ratings
+- Improving accessibility for screen readers
+
+### Resources
+
+- [React Documentation](https://reactjs.org/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [Styled Components](https://styled-components.com/)
+
+## Author
+
+- Portfolio: [Your Portfolio](#) *(Replace with actual link)*
+- Frontend Mentor: [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter: [@yourusername](https://www.twitter.com/yourusername)
+
+## Acknowledgments
+
+A big thank you to Frontend Mentor for providing great challenges that push developers to improve their skills. Special thanks to the community for their valuable resources and support!
+
